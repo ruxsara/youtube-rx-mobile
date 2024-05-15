@@ -1,5 +1,11 @@
 import React from "react";
-import { FlatList, SafeAreaView, Text, TouchableOpacity, View } from "react-native";
+import {
+  FlatList,
+  SafeAreaView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { VideoCard } from "../video-card";
 
 export const Videos = () => {
@@ -39,10 +45,10 @@ export const Videos = () => {
               <View className="flex-row mt-2 ">
                 <View className="w-8 h-8 rounded-full bg-red-600 ml-2 "></View>
                 <View className=" ml-3">
-                  <Text className="mr-5 font-medium">
+                  <Text className="mr-5 font-medium dark:text-white">
                     Config 2022 Opening Keynote - Dylan Field
                   </Text>
-                  <Text className="text-gray-600">
+                  <Text className="text-[#828080] dark:text-[#D9D9D9]">
                     Figma · 437K views ·7 days ago
                   </Text>
                 </View>

@@ -16,7 +16,7 @@ import Upload from "../../assets/icons/upload.svg";
 export default function Add() {
   const [modalVisible, setModalVisible] = useState(false);
   return (
-    <View className="flex-1 justify-end">
+    <View className="flex-1 justify-end ">
       <Modal
         animationType="slide"
         transparent={true}
@@ -81,7 +81,9 @@ export default function Add() {
           </View>
         </View>
       </Modal>
-     
+      <Pressable onPress={() => setModalVisible(true)}>
+        <Text className="text-center">Show Modal</Text>
+      </Pressable>
     </View>
   );
 }

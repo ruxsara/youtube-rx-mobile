@@ -14,8 +14,8 @@ export const Categories = () => {
     <ScrollView  horizontal showsHorizontalScrollIndicator={false}  >
       <View className="p-2 mt-2 flex-row items-center">
         <TouchableOpacity>
-          <View className="rounded-lg mr-2 bg-gray-100 px-3 py-0.5">
-            <Explore className="py-1 px-3 font-semibold " />
+          <View className="rounded-lg mr-2 bg-gray-200 dark:bg-[#272727] py-1.5 px-3">
+            <Explore className=" font-semibold " />
           </View>
         </TouchableOpacity>
         <FlatList
@@ -34,8 +34,8 @@ export const Categories = () => {
           horizontal
           renderItem={({ item }) => (
             <TouchableOpacity>
-              <View className="rounded-lg mr-2 bg-gray-100 ">
-                <Text className="py-1 px-3 font-semibold">{item.key}</Text>
+              <View className="rounded-lg mr-2 bg-gray-200 dark:bg-[#272727] ">
+                <Text className="py-1.5 px-3 font-semibold dark:text-white">{item.key}</Text>
               </View>
             </TouchableOpacity>
           )}
