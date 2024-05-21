@@ -7,7 +7,8 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import Add from "assets/icons/Your-account.svg";
+import Add from "@assets/icons/Your-account.svg";
+
 export const Subscriptions = () => {
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false}>

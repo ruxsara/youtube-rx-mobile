@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { VideoCard } from "../video-card";
+import { VideoCard } from "@components/video-card"
 
 export const Videos = () => {
   const videoList = [

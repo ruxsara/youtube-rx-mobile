@@ -3,14 +3,14 @@ import { ResizeMode, Video } from "expo-av";
 import React from "react";
 import { ScrollView, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import Clip from "assets/icons/clip.svg";
-import DisLike from "assets/icons/dislike.svg";
-import Down from "assets/icons/down.svg";
-import Download from "assets/icons/download.svg";
-import Like from "assets/icons/like.svg";
-import NotificationOff from "assets/icons/notification-off.svg";
-import Share from "assets/icons/share.svg";
-import You from "assets/icons/you.svg";
+import Clip from "@assets/icons/clip.svg";
+import DisLike from "@assets/icons/dislike.svg";
+import Down from "@assets/icons/down.svg";
+import Download from "@assets/icons/download.svg";
+import Like from "@assets/icons/like.svg";
+import NotificationOff from "@assets/icons/notification-off.svg";
+import Share from "@assets/icons/share.svg";
+import You from "@assets/icons/you.svg";
 import { Videos } from "../videos";
 
 export const PlayVideo = () => {

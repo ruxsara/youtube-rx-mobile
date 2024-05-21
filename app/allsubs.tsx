@@ -1,12 +1,12 @@
 import { Link } from "expo-router";
 import React from "react";
 import { FlatList, ScrollView, StyleSheet, Text, View } from "react-native";
-import Back from "../assets/icons/back.svg";
-import Bell from "../assets/icons/bell.svg";
-import Cast from "../assets/icons/cast.svg";
-import Down from "../assets/icons/down.svg";
-import Search from "../assets/icons/search.svg";
-import You from "../assets/icons/you.svg";
+import Back from "@assets/icons/back.svg";
+import Bell from "@assets/icons/bell.svg";
+import Cast from "@assets/icons/cast.svg";
+import Down from "@assets/icons/down.svg";
+import Search from "@assets/icons/search.svg";
+import You from "@assets/icons/you.svg";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTheme } from "@react-navigation/native";
 const AllSubscriptions = () => {

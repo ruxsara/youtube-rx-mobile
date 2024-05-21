@@ -8,21 +8,21 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import Next from "assets/icons/next.svg";
+import Next from "@assets/icons/next.svg";
 
-import AddAccount from "assets/icons/add-account.svg";
-import Channel from "assets/icons/channel.svg";
-import Close from "assets/icons/close.svg";
-import Data from "assets/icons/data.svg";
-import Help from "assets/icons/help.svg";
-import Incognito from "assets/icons/incognito.svg";
-import Music from "assets/icons/music.svg";
-import Premium from "assets/icons/premium.svg";
-import Purchase from "assets/icons/purchase.svg";
-import Settings from "assets/icons/settings.svg";
-import Studio from "assets/icons/studio.svg";
-import Time from "assets/icons/time.svg";
-import YourAccount from "assets/icons/Your-account.svg";
+import AddAccount from "@assets/icons/add-account.svg";
+import Channel from "@assets/icons/channel.svg";
+import Close from "@assets/icons/close.svg";
+import Data from "@assets/icons/data.svg";
+import Help from "@assets/icons/help.svg";
+import Incognito from "@assets/icons/incognito.svg";
+import Music from "@assets/icons/music.svg";
+import Premium from "@assets/icons/premium.svg";
+import Purchase from "@assets/icons/purchase.svg";
+import Settings from "@assets/icons/settings.svg";
+import Studio from "@assets/icons/studio.svg";
+import Time from "@assets/icons/time.svg";
+import YourAccount from "@assets/icons/Your-account.svg";
 import { useTheme } from "@react-navigation/native";
 
 export default function You() {

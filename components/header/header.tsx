@@ -1,9 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import Bell from "assets/icons/bell.svg";
-import Cast from "assets/icons/cast.svg";
-import Logo from "assets/icons/logo.svg";
-import Search from "assets/icons/search.svg";
+import Bell from "@assets/icons/bell.svg";
+import Cast from "@assets/icons/cast.svg";
+import Logo from "@assets/icons/logo.svg";
+import Search from "@assets/icons/search.svg";
 import { useTheme } from "@react-navigation/native";
 
 export const Header = () => {

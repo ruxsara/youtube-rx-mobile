@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { PlayVideo } from "@/components/play-video";
+import { PlayVideo } from "@components/play-video";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function () {
