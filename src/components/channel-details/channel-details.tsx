@@ -15,7 +15,9 @@ export const ChannelDetails = () => {
   const theme = useTheme();
 
   return (
+
     <View className="flex-1 mx-2">
+      
       <View className=" my-2">
         <Image
           className="w-full aspect-[9/3] rounded-2xl"

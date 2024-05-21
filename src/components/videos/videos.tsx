@@ -7,22 +7,23 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { VideoEntity } from "@constants/types";
 
 export const Videos = () => {
-  const videoList = [
+  const videoList: VideoEntity[] = [
     {
       id: 2222,
-      title: 2,
+      title: 'dh',
       uri: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
     },
     {
       id: 22422,
-      title: 3,
+      title: 'jedhe',
       uri: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
     },
     {
       id: 2444222,
-      title: 455,
+      title:'nhebdnjekm',
       uri: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
     },
   ];
@@ -36,7 +37,7 @@ export const Videos = () => {
         renderItem={({ item }) => (
           <TouchableOpacity>
             <View>
-              <VideoCard item={item} />
+              <VideoCard video={item} />
               <View className="flex-row mt-2 ">
                 <View className="w-8 h-8 rounded-full bg-red-600 ml-2 "></View>
                 <View className=" ml-3">
