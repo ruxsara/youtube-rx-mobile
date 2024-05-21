@@ -1,14 +1,14 @@
 import { Image } from "expo-image";
 import React from "react";
 import { Text, View } from "react-native";
-import YourAccount from "../../assets/icons/Your-account.svg";
-import Bell from "../../assets/icons/bell.svg";
-import Down from "../../assets/icons/down.svg";
-import Next from "../../assets/icons/next.svg";
+import YourAccount from "assets/icons/Your-account.svg";
+import Bell from "assets/icons/bell.svg";
+import Down from "assets/icons/down.svg";
+import Next from "assets/icons/next.svg";
 import { Link } from "expo-router";
 import { ResizeMode, Video } from "expo-av";
-import You from "../../assets/icons/you.svg";
-import More from "../../assets/icons/more.svg";
+import You from "assets/icons/you.svg";
+import More from "assets/icons/more.svg";
 import { useTheme } from "@react-navigation/native";
 
 

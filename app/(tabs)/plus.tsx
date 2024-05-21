@@ -7,11 +7,11 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import Close from "../../assets/icons/close.svg";
-import Live from "../../assets/icons/live.svg";
-import Create from "../../assets/icons/post.svg";
-import Short from "../../assets/icons/shorts.svg";
-import Upload from "../../assets/icons/upload.svg";
+import Close from "assets/icons/close.svg";
+import Live from "assets/icons/live.svg";
+import Create from "assets/icons/post.svg";
+import Short from "assets/icons/shorts.svg";
+import Upload from "assets/icons/upload.svg";
 import { useTheme } from "@react-navigation/native";
 
 export default function Add() {

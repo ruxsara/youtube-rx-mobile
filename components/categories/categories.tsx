@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View
 } from "react-native";
-import Explore from "../../assets/icons/explore.svg";
+import Explore from "assets/icons/explore.svg";
 import { useTheme } from "@react-navigation/native";
 export const Categories = () => {
   const theme = useTheme();
