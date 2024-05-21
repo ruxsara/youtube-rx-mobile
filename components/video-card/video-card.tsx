@@ -2,7 +2,7 @@ import { ResizeMode, Video } from "expo-av";
 import * as React from "react";
 import { View } from "react-native";
 
-export const VideoCard = ({item}:any) => {
+export const VideoCard = ({ item }: any) => {
   const video = React.useRef(null);
   const [status, setStatus] = React.useState({});
   return (

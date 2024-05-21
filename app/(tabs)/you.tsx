@@ -1,3 +1,4 @@
+import Next from "@assets/icons/next.svg";
 import React, { useState } from "react";
 import {
   Alert,
@@ -8,7 +9,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import Next from "@assets/icons/next.svg";
 
 import AddAccount from "@assets/icons/add-account.svg";
 import Channel from "@assets/icons/channel.svg";
@@ -45,7 +45,7 @@ export default function You() {
             <ScrollView>
               <View className="w-full flex-row py-4 px-2 items-center ">
                 <Pressable onPress={() => setModalVisible(!modalVisible)}>
-                  <Close width={22} height={22} color={theme.colors.text}/>
+                  <Close width={22} height={22} color={theme.colors.text} />
                 </Pressable>
                 <Text className="text-2xl font-bold dark:text-white ml-2">
                   Accounts
@@ -65,12 +65,12 @@ export default function You() {
                     Manage your Google Account
                   </Text>
                 </View>
-                <Next  width={22} height={22} color={theme.colors.text}/>
+                <Next width={22} height={22} color={theme.colors.text} />
               </View>
               <View className="items-start w-full mt-3">
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Channel width={22} height={22} color={theme.colors.text}/>
+                    <Channel width={22} height={22} color={theme.colors.text} />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Your Channel
                     </Text>
@@ -79,7 +79,11 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Incognito width={22} height={22} color={theme.colors.text}/>
+                    <Incognito
+                      width={22}
+                      height={22}
+                      color={theme.colors.text}
+                    />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Turn on lncognito
                     </Text>
@@ -88,7 +92,11 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <AddAccount width={22} height={22} color={theme.colors.text}/>
+                    <AddAccount
+                      width={22}
+                      height={22}
+                      color={theme.colors.text}
+                    />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Add Account
                     </Text>
@@ -98,7 +106,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Premium width={22} height={22} color={theme.colors.text}/>
+                    <Premium width={22} height={22} color={theme.colors.text} />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Get Youtube Premium
                     </Text>
@@ -107,7 +115,11 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Purchase width={22} height={22} color={theme.colors.text}/>
+                    <Purchase
+                      width={22}
+                      height={22}
+                      color={theme.colors.text}
+                    />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Purchases and memberships
                     </Text>
@@ -116,7 +128,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Time width={22} height={22} color={theme.colors.text}/>
+                    <Time width={22} height={22} color={theme.colors.text} />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Time watched
                     </Text>
@@ -124,7 +136,7 @@ export default function You() {
                 </TouchableOpacity>
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Data width={22} height={22} color={theme.colors.text}/>
+                    <Data width={22} height={22} color={theme.colors.text} />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Your data in Youtube
                     </Text>
@@ -134,7 +146,11 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Settings width={22} height={22} color={theme.colors.text}/>
+                    <Settings
+                      width={22}
+                      height={22}
+                      color={theme.colors.text}
+                    />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Settings
                     </Text>
@@ -143,7 +159,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Help width={22} height={22} color={theme.colors.text}/>
+                    <Help width={22} height={22} color={theme.colors.text} />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Help & feedback
                     </Text>
@@ -162,7 +178,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Music width={22} height={22} color={theme.colors.text}/>
+                    <Music width={22} height={22} color={theme.colors.text} />
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       YouTube Music
                     </Text>

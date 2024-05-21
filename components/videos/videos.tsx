@@ -1,3 +1,4 @@
+import { VideoCard } from "@components/video-card";
 import React from "react";
 import {
   FlatList,
@@ -6,7 +7,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { VideoCard } from "@components/video-card"
 
 export const Videos = () => {
   const videoList = [
@@ -14,26 +14,21 @@ export const Videos = () => {
       id: 2222,
       title: 2,
       uri: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-      // data: eventList1?.attributes?.events?.data as EventEntity[],
     },
     {
       id: 22422,
       title: 3,
       uri: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-
-      // data: eventList2?.attributes?.events?.data as EventEntity[],
     },
     {
       id: 2444222,
       title: 455,
       uri: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-
-      // data: eventList3?.attributes?.events?.data as EventEntity[],
     },
   ];
 
   return (
-    <SafeAreaView className="p-2 mt-2 flex-row items-center" >
+    <SafeAreaView className="p-2 mt-2 flex-row items-center">
       <FlatList
         data={videoList}
         showsHorizontalScrollIndicator={false}

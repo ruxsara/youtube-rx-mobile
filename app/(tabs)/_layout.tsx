@@ -1,18 +1,15 @@
-import FontAwesome from "@expo/vector-icons/FontAwesome";
-import { Tabs } from "expo-router";
-import React from "react";
 import AddIcon from "@assets/icons/add.svg";
 import Home from "@assets/icons/home.svg";
 import Shorts from "@assets/icons/shorts.svg";
-import You from "@assets/icons/you.svg";
-
 import Subscriptions from "@assets/icons/subscriptions.svg";
-
+import You from "@assets/icons/you.svg";
 import { useClientOnlyValue } from "@components/useClientOnlyValue";
 import { useColorScheme } from "@components/useColorScheme";
 import Colors from "@constants/Colors";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { Tabs } from "expo-router";
+import React from "react";
 
-// You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>["name"];
   color: string;
@@ -42,7 +39,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="two"
         options={{
-          headerShown:false,
+          headerShown: false,
           title: "Shorts",
           tabBarIcon: ({ color }) => <Shorts color={color} />,
         }}
@@ -50,16 +47,16 @@ export default function TabLayout() {
 
       <Tabs.Screen
         name="plus"
-        options={{  
+        options={{
           title: "",
-          tabBarIcon: ({ color }) => <AddIcon color={color}/>,
+          tabBarIcon: ({ color }) => <AddIcon color={color} />,
         }}
       />
 
       <Tabs.Screen
         name="subscriptions"
         options={{
-          headerShown:false,
+          headerShown: false,
           title: "Subscriptions",
           tabBarIcon: ({ color }) => <Subscriptions color={color} />,
         }}
@@ -74,7 +71,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="test"
         options={{
-          headerShown:false,
+          headerShown: false,
           title: "You",
           tabBarIcon: ({ color }) => <You color={color} />,
         }}

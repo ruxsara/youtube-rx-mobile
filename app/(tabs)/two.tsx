@@ -1,9 +1,4 @@
 import { ScrollView } from "react-native";
-
-import { Text, View } from "@components/Themed";
-import { ResizeMode, Video } from "expo-av";
-import React from "react";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import MusicCard from "@assets/icons/Music-card.svg";
 import Camera from "@assets/icons/camera.svg";
 import Comment from "@assets/icons/comment.svg";
@@ -15,7 +10,11 @@ import Reshare from "@assets/icons/reshare.svg";
 import Search from "@assets/icons/search.svg";
 import Share from "@assets/icons/share.svg";
 import You from "@assets/icons/you.svg";
+import { Text, View } from "@components/Themed";
 import { useTheme } from "@react-navigation/native";
+import { ResizeMode, Video } from "expo-av";
+import React from "react";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function TabTwoScreen() {
   const theme = useTheme();

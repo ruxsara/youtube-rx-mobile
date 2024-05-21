@@ -1,8 +1,3 @@
-import { useTheme } from "@react-navigation/native";
-import { ResizeMode, Video } from "expo-av";
-import React from "react";
-import { ScrollView, Text, View } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Clip from "@assets/icons/clip.svg";
 import DisLike from "@assets/icons/dislike.svg";
 import Down from "@assets/icons/down.svg";
@@ -11,10 +6,13 @@ import Like from "@assets/icons/like.svg";
 import NotificationOff from "@assets/icons/notification-off.svg";
 import Share from "@assets/icons/share.svg";
 import You from "@assets/icons/you.svg";
+import { useTheme } from "@react-navigation/native";
+import { ResizeMode, Video } from "expo-av";
+import React from "react";
+import { ScrollView, Text, View } from "react-native";
 import { Videos } from "../videos";
 
 export const PlayVideo = () => {
-  const safeAreaInsets = useSafeAreaInsets();
   const video = React.useRef(null);
   const [status, setStatus] = React.useState({});
   const theme = useTheme();
@@ -77,8 +75,8 @@ export const PlayVideo = () => {
             <Text className="ml-2 dark:text-white">Clip</Text>
           </View>
         </View>
-      </ScrollView> 
-       
+      </ScrollView>
+
       <View className="bg-[#e5e5e5] dark:bg-[#1a1a1a] mx-3  p-4 rounded-xl">
         <View className="flex-row ">
           <Text className="font-bold dark:text-white">Comments</Text>

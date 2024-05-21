@@ -1,3 +1,4 @@
+import Add from "@assets/icons/Your-account.svg";
 import { Link } from "expo-router";
 import React from "react";
 import {
@@ -7,7 +8,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import Add from "@assets/icons/Your-account.svg";
 
 export const Subscriptions = () => {
   return (
