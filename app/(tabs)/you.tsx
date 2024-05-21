@@ -23,8 +23,11 @@ import Settings from "../../assets/icons/settings.svg";
 import Studio from "../../assets/icons/studio.svg";
 import Time from "../../assets/icons/time.svg";
 import YourAccount from "../../assets/icons/Your-account.svg";
+import { useTheme } from "@react-navigation/native";
 
 export default function You() {
+  const theme = useTheme();
+
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <View className="flex-1 justify-end">
@@ -42,7 +45,7 @@ export default function You() {
             <ScrollView>
               <View className="w-full flex-row py-4 px-2 items-center ">
                 <Pressable onPress={() => setModalVisible(!modalVisible)}>
-                  <Close />
+                  <Close width={22} height={22} color={theme.colors.text}/>
                 </Pressable>
                 <Text className="text-2xl font-bold dark:text-white ml-2">
                   Accounts
@@ -62,12 +65,12 @@ export default function You() {
                     Manage your Google Account
                   </Text>
                 </View>
-                <Next />
+                <Next  width={22} height={22} color={theme.colors.text}/>
               </View>
               <View className="items-start w-full mt-3">
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Channel />
+                    <Channel width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Your Channel
                     </Text>
@@ -76,7 +79,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Incognito />
+                    <Incognito width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Turn on lncognito
                     </Text>
@@ -85,7 +88,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <AddAccount />
+                    <AddAccount width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Add Account
                     </Text>
@@ -95,7 +98,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Premium />
+                    <Premium width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Get Youtube Premium
                     </Text>
@@ -104,7 +107,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Purchase />
+                    <Purchase width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Purchases and memberships
                     </Text>
@@ -113,7 +116,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Time />
+                    <Time width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Time watched
                     </Text>
@@ -121,9 +124,9 @@ export default function You() {
                 </TouchableOpacity>
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Data />
+                    <Data width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
-                      Your data in Youtube{" "}
+                      Your data in Youtube
                     </Text>
                   </View>
                 </TouchableOpacity>
@@ -131,7 +134,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Settings />
+                    <Settings width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Settings
                     </Text>
@@ -140,7 +143,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Help />
+                    <Help width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       Help & feedback
                     </Text>
@@ -159,7 +162,7 @@ export default function You() {
 
                 <TouchableOpacity>
                   <View className="flex-row items-center py-3">
-                    <Music />
+                    <Music width={22} height={22} color={theme.colors.text}/>
                     <Text className="dark:text-white text-lg font-medium ml-3">
                       YouTube Music
                     </Text>

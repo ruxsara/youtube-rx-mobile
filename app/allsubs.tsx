@@ -8,7 +8,10 @@ import Down from "../assets/icons/down.svg";
 import Search from "../assets/icons/search.svg";
 import You from "../assets/icons/you.svg";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useTheme } from "@react-navigation/native";
 const AllSubscriptions = () => {
+  const theme = useTheme();
+
   const safeAreaInsets = useSafeAreaInsets();
 
   return (
@@ -17,18 +20,18 @@ const AllSubscriptions = () => {
       style={{ paddingTop: safeAreaInsets.top + 6 }}
     >
       <View className="relative flex-row items-center justify-between p-2">
-        <View className="flex-row items-center">
+        <View className="flex-row items-center justify-between">
           <Link href={"/(tabs)/subscriptions"}>
-            <Back />
+            <Back width={22} height={22} color={theme.colors.text}/>
           </Link>
           <Text className="font-extrabold text-2xl dark:text-white">
             All Subscription
           </Text>
         </View>
         <View className="absolute flex-row right-2 gap-x-3 ">
-          <Cast />
-          <Bell />
-          <Search />
+          <Cast width={22} height={22} color={theme.colors.text}/>
+          <Bell width={22} height={22} color={theme.colors.text}/>
+          <Search width={22} height={22} color={theme.colors.text}/>
         </View>
       </View>
       <View className="flex-row items-center">
@@ -49,13 +52,12 @@ const AllSubscriptions = () => {
               <View className="flex-row items-center">
                 <You />
                 <Text className="ml-2 text-base dark:text-white">
-                  {" "}
                   {item.key}
                 </Text>
               </View>
               <View className="flex-row items-center bg-gray-400 py-1 rounded-3xl px-3">
-                <Bell />
-                <Down />
+                <Bell width={22} height={22} color={theme.colors.text}/>
+                <Down width={22} height={22} color={theme.colors.text}/>
               </View>
             </View>
           )}

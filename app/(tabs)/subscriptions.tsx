@@ -10,7 +10,7 @@ export default function Sara() {
   const safeAreaInsets = useSafeAreaInsets();
 
   return (
-    <ScrollView>
+    <ScrollView >
       <View className="flex-1 " style={{ paddingTop: safeAreaInsets.top + 0 }}>
         {/* header */}
         <Header />

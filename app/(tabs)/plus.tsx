@@ -12,8 +12,11 @@ import Live from "../../assets/icons/live.svg";
 import Create from "../../assets/icons/post.svg";
 import Short from "../../assets/icons/shorts.svg";
 import Upload from "../../assets/icons/upload.svg";
+import { useTheme } from "@react-navigation/native";
 
 export default function Add() {
+  const theme = useTheme();
+
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <View className="flex-1 justify-end ">
@@ -29,9 +32,9 @@ export default function Add() {
         <View className="flex-1 w-full justify-end">
           <View className="bg-[#373737] h-1/2">
             <View className="w-full flex-row justify-between py-4 px-3 items-center ">
-              <Text className="text-xl font-bold text-white"> Create</Text>
+              <Text className="text-xl font-bold text-white" > Create</Text>
               <Pressable onPress={() => setModalVisible(!modalVisible)}>
-                <Close />
+                <Close width={22} height={22} color={theme.colors.text}/>
               </Pressable>
             </View>
 
@@ -39,7 +42,7 @@ export default function Add() {
               <TouchableOpacity>
                 <View className="flex-row items-center p-3">
                   <View className="bg-[#4e4c4c] p-3 rounded-full mr-2">
-                    <Short />
+                    <Short width={22} height={22} color={theme.colors.text}/>
                   </View>
                   <Text className="text-white text-lg font-medium">
                     Create a Short
@@ -49,7 +52,7 @@ export default function Add() {
               <TouchableOpacity>
                 <View className="flex-row items-center p-3">
                   <View className="bg-[#4e4c4c] p-3 rounded-full mr-2">
-                    <Upload />
+                    <Upload width={22} height={22} color={theme.colors.text}/>
                   </View>
                   <Text className="text-white text-lg font-medium">
                     Upload a Video
@@ -60,7 +63,7 @@ export default function Add() {
               <TouchableOpacity>
                 <View className="flex-row items-center p-3">
                   <View className="bg-[#4e4c4c] p-3 rounded-full mr-2">
-                    <Live />
+                    <Live width={22} height={22} color={theme.colors.text}/>
                   </View>
                   <Text className="text-white text-lg font-medium">
                     Go Live
@@ -70,7 +73,7 @@ export default function Add() {
               <TouchableOpacity>
                 <View className="flex-row items-center p-3">
                   <View className="bg-[#4e4c4c] p-3 rounded-full mr-2">
-                    <Create />
+                    <Create width={22} height={22} color={theme.colors.text}/>
                   </View>
                   <Text className="text-white text-lg font-medium ">
                     Create a Post

@@ -15,8 +15,11 @@ import Reshare from "../../assets/icons/reshare.svg";
 import Search from "../../assets/icons/search.svg";
 import Share from "../../assets/icons/share.svg";
 import You from "../../assets/icons/you.svg";
+import { useTheme } from "@react-navigation/native";
 
 export default function TabTwoScreen() {
+  const theme = useTheme();
+
   const safeAreaInsets = useSafeAreaInsets();
 
   const video = React.useRef(null);
@@ -40,9 +43,9 @@ export default function TabTwoScreen() {
         onPlaybackStatusUpdate={(status) => setStatus(() => status)}
       />
       <View className="absolute flex-row bg-transparent right-0 gap-6 top-4">
-        <Search />
-        <Camera />
-        <More />
+        <Search width={26} height={26} color={theme.colors.text} />
+        <Camera width={26} height={26} color={theme.colors.text} />
+        <More width={26} height={26} color={theme.colors.text} />
       </View>
       <View className="w-full absolute bottom-2 bg-transparent">
         <View className="flex-row items-center mx-2  bg-transparent">
@@ -59,18 +62,18 @@ export default function TabTwoScreen() {
         </Text>
         <View className="bg-transparent flex-row justify-between mx-2 ">
           <View className="flex-row bg-transparent items-center gap-2">
-            <MusicNote />
+            <MusicNote width={26} height={26} color={theme.colors.text} />
             <Text className="text-base text-white">Original Music </Text>
           </View>
           <MusicCard />
         </View>
       </View>
       <View className=" bg-transparent absolute right-2 bottom-28 py-2 gap-8">
-        <Like />
-        <Dislike />
-        <Comment />
-        <Share />
-        <Reshare />
+        <Like width={30} height={30} color={theme.colors.card} />
+        <Dislike width={30} height={30} color={theme.colors.text} />
+        <Comment width={30} height={30} color={theme.colors.text} />
+        <Share width={30} height={30} color={theme.colors.text} />
+        <Reshare width={30} height={30} color={theme.colors.text} />
       </View>
     </ScrollView>
   );

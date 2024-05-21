@@ -33,7 +33,7 @@ export const Videos = () => {
   ];
 
   return (
-    <SafeAreaView className="p-2 mt-2 flex-row items-center">
+    <SafeAreaView className="p-2 mt-2 flex-row items-center" >
       <FlatList
         data={videoList}
         showsHorizontalScrollIndicator={false}

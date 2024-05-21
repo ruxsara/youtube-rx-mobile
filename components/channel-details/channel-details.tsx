@@ -9,10 +9,13 @@ import { Link } from "expo-router";
 import { ResizeMode, Video } from "expo-av";
 import You from "../../assets/icons/you.svg";
 import More from "../../assets/icons/more.svg";
+import { useTheme } from "@react-navigation/native";
 
 
 export const ChannelDetails = () => {
   const [status, setStatus] = React.useState({});
+  const theme = useTheme();
+
 
   return (
     <View className="flex-1 mx-2">
@@ -46,14 +49,14 @@ export const ChannelDetails = () => {
         </Text>
 
         <View className="ml-7">
-          <Next />
+          <Next width={22} height={22} color={theme.colors.text}/>
         </View>
       </View>
 
       <View className="flex-row items-center bg-stone-700 rounded-full py-2 my-3  justify-center">
-        <Bell />
+        <Bell width={22} height={22} color={theme.colors.text}/>
         <Text className="text-white font-medium">Abone olundu</Text>
-        <Down />
+        <Down  width={22} height={22} color={theme.colors.text}/>
       </View>
 
 
