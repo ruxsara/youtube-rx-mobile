@@ -9,9 +9,9 @@ module.exports = function (api) {
         "module-resolver",
         {
           alias: {
-            assets: "./assets",
-            components: "./components",
-            constants: "./constants",
+            assets: "./src/assets",
+            components: "./src/components",
+            constants: "./src/constants",
             hooks: "./hooks",
             store: "./store",
             utils: "./utils",

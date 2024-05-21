@@ -10,7 +10,7 @@ import { useTheme } from "@react-navigation/native";
 import { ResizeMode, Video } from "expo-av";
 import React from "react";
 import { ScrollView, Text, View } from "react-native";
-import { Videos } from "../videos";
+import { Videos } from "@components/videos";
 
 export const PlayVideo = () => {
   const video = React.useRef(null);
