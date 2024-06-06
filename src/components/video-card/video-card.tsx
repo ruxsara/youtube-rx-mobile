@@ -1,17 +1,25 @@
+import { VideoEntity } from "@constants/types";
 import { ResizeMode, Video } from "expo-av";
+import { router } from "expo-router";
 import * as React from "react";
-import { View } from "react-native";
+import { TouchableOpacity } from "react-native";
 
-export const VideoCard = ({ item }: any) => {
-  const video = React.useRef(null);
+
+interface VideoCardProps {
+  video: VideoEntity;
+}
+
+export const VideoCard = ({ video }: VideoCardProps) => {
+  const { id, uri } = video;
+  const videoRef = React.useRef(null);
   const [status, setStatus] = React.useState({});
   return (
-    <View>
+    <TouchableOpacity onPress={() => router.replace(`/(app)/video/${id}`)}>
       <Video
-        ref={video}
+        ref={videoRef}
         className="w-full h-[200px] mt-4"
         source={{
-          uri: item.uri,
+          uri: uri,
         }}
         useNativeControls={false}
         resizeMode={ResizeMode.COVER}
@@ -20,6 +28,6 @@ export const VideoCard = ({ item }: any) => {
         isMuted
         onPlaybackStatusUpdate={(status) => setStatus(() => status)}
       />
-    </View>
+    </TouchableOpacity>
   );
 };
