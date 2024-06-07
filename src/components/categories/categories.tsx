@@ -3,6 +3,7 @@ import { useTheme } from "@react-navigation/native";
 import React from "react";
 import {
   FlatList,
+  Pressable,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -13,17 +14,12 @@ export const Categories = () => {
   const theme = useTheme();
 
   return (
-    <ScrollView
-      horizontal
-      showsHorizontalScrollIndicator={false}
-      nestedScrollEnabled
-    >
       <View className="p-2 mt-2 flex-row items-center">
-        <TouchableOpacity>
+        <Pressable>
           <View className="rounded-lg mr-2 bg-gray-200 dark:bg-[#272727] py-1.5 px-3">
             <Explore width={22} height={22} color={theme.colors.text} />
           </View>
-        </TouchableOpacity>
+        </Pressable>
         <FlatList
           data={[
             { key: "Devin" },
@@ -49,6 +45,5 @@ export const Categories = () => {
           )}
         />
       </View>
-    </ScrollView>
   );
 };
