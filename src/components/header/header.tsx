@@ -4,7 +4,7 @@ import Logo from "@assets/icons/logo.svg";
 import Search from "@assets/icons/search.svg";
 import { useTheme } from "@react-navigation/native";
 import React from "react";
-import { View } from "react-native";
+import { Pressable, View } from "react-native";
 
 export const Header = () => {
   const theme = useTheme();
@@ -15,9 +15,15 @@ export const Header = () => {
         <Logo width={96} height={29} color={theme.colors.text} />
       </View>
       <View className="absolute flex-row right-2 gap-x-3">
-        <Cast width={22} height={22} color={theme.colors.text} />
-        <Bell width={22} height={22} color={theme.colors.text} />
-        <Search width={22} height={22} color={theme.colors.text} />
+        <Pressable>
+          <Cast width={22} height={22} color={theme.colors.text} />
+        </Pressable>
+        <Pressable>
+          <Bell width={22} height={22} color={theme.colors.text} />
+        </Pressable>
+        <Pressable>
+          <Search width={22} height={22} color={theme.colors.text} />
+        </Pressable>
       </View>
     </View>
   );

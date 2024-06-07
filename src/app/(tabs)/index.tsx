@@ -3,7 +3,7 @@ import { Header } from "@components/header";
 import { Videos } from "@components/videos";
 import { useTheme } from "@react-navigation/native";
 import React from "react";
-import { RefreshControl, ScrollView } from "react-native";
+import { View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function TabOneScreen() {
@@ -20,22 +20,11 @@ export default function TabOneScreen() {
   const safeAreaInsets = useSafeAreaInsets();
 
   return (
-    <ScrollView
-      nestedScrollEnabled
-      className="flex-1"
-      style={{ paddingTop: safeAreaInsets.top + 0 }}
-      refreshControl={
-        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
-      }
-    >
-      {/* categories */}
-
+ 
+    <View className="flex-1" style={{ paddingTop: safeAreaInsets.top + 0 }}>
       <Header />
-
       <Categories />
-
-      {/* Videos */}
       <Videos />
-    </ScrollView>
+    </View>
   );
 }

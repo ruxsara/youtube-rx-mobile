@@ -11,7 +11,6 @@ import {
 
 export const Subscriptions = () => {
   return (
-    <ScrollView horizontal showsHorizontalScrollIndicator={false}>
       <View className="p-2 mt-2 flex-row items-center">
         <FlatList
           data={[
@@ -40,6 +39,5 @@ export const Subscriptions = () => {
           <Text className="text-blue-500">All</Text>
         </Link>
       </View>
-    </ScrollView>
   );
 };
