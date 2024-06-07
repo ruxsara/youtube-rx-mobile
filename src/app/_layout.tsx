@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { useColorScheme } from "@components/useColorScheme";
 import { Provider } from "react-redux";
 
+
 export {
   // Catch any errors thrown by the Layout component.
   ErrorBoundary,

@@ -2,7 +2,8 @@ import { Categories } from "@components/categories";
 import { Header } from "@components/header";
 import { Videos } from "@components/videos";
 import { useTheme } from "@react-navigation/native";
-import React from "react";
+import { fetchVideos } from "api/fetch-videos";
+import React, { useEffect } from "react";
 import { View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -18,6 +19,9 @@ export default function TabOneScreen() {
   }, []);
 
   const safeAreaInsets = useSafeAreaInsets();
+useEffect(() => {
+  FetchVideos()
+}, [])
 
   return (
  
